@@ -23,7 +23,7 @@ def main():
     try:
         content = json.loads(vim.eval('content'))
     except (TypeError, ValueError) as e:
-        vim.command("echo 'JSON Format Error: %s'" % e.message)
+        vim.command("echoe 'JSON Format Error: %s'" % e.message)
         return
 
     result = json.dumps(content, ensure_ascii=True, indent=indent, 
