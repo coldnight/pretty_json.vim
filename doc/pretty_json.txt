@@ -1,0 +1,39 @@
+*pretty_json.txt*     Plugin to prettify JSON
+
+==============================================================================
+CONTENTS                                                     *pretty-json*
+
+1. Introduction                                                   |pj-intro|
+2. Settings                                                    |pj-settings|
+3. Mappings                                                    |pj-mappings|
+
+==============================================================================
+INTRODUCTION                                                      *pj-intro*
+
+This plugin to prettify JSON
+
+==============================================================================
+SETTINGS                                                       *pj-settings*
+
+This plugin has a few variables you can define in your vimrc that change the
+behavior of the plugin.
+
+                                                                *g:pretty_json_indent*
+g:pretty_json_json_indent~
+	Set this option define indent of each block: >
+	    let g:pretty_json_indent = 4
+<
+
+                                                  *g:pretty_json_sort_keys*
+g:pretty_json_sort_keys~
+	Set this option to 1 to sort keys of JSON: >
+	    let g:pretty_json_sort_keys= 1
+<
+==============================================================================
+MAPPINGS                                                       *pj-mappings*
+
+							*pj_pj*
+<Leader>pj		Prettiy JSON in current buffer
+
+==============================================================================
+ vim:tw=78:sw=4:noet:ts=8:ft=help:norl:
