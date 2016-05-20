@@ -2,7 +2,7 @@ if !has("python")
     finish
 endif
 
-function PrettyJSON()
+function! PrettyJSON()
     let content = join(getline(1, '$'), "\n")
 
     if !exists("g:pretty_json_indent")
