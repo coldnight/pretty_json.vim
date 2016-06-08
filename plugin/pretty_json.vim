@@ -26,7 +26,7 @@ def main():
         vim.command("echoe 'JSON Format Error: %s'" % e.message)
         return
 
-    result = json.dumps(content, ensure_ascii=True, indent=indent, 
+    result = json.dumps(content, ensure_ascii=False, indent=indent, 
                         sort_keys=sort_keys == 1)
 
     for ln, line in enumerate(result.splitlines()):
